@@ -1,0 +1,155 @@
+/*
+STILL NEEDS ALOT OF WORK CHECK NOTES AT BOTTOM TO REMEBER WHAT TO BUILD
+*/
+
+nav {
+   border-style: solid;
+   display: flex;
+   flex-direction: column;
+   height: 200px;;
+}
+
+#navBackground {
+   background: url("../images/fillerBanner.jpg") no-repeat center;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -ms-background-size: cover;
+   background-size: cover;
+   /*
+   Need to learn how to resize images
+   Create Vector banner for Nav background
+   Create Vector Logo
+   */
+   background-color: #ffffff;
+   height: 200px;
+   border: 2px solid black;
+}
+
+li {
+   list-style-type: none;
+   flex: 0 1 100px;
+   background: blue;
+   border: 1px solid black;
+   text-align: center;
+   padding: 10px 10px 10px 10px;
+   margin: 4px;
+   border-radius: 50%;
+   display: inline;
+   float: right;
+}
+
+a {
+   text-decoration: none;
+   color: white;
+   font-family: 'Pacifico', cursive;
+   font-size: 24px;
+}
+
+.leftAlign {
+   float: left;
+}
+
+.Logo {
+   background: url("../images/key.png") no-repeat auto;
+   /*
+   min-width: 100%;
+   height: auto;
+   Why doesnt file destination work?
+   */
+}
+
+/*
+ accidentaly made a cool double circle animation, why is that?
+ guessing it has somethign to do with Margin/padding settings
+*/
+ul.topNav {
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+   overflow: hidden;
+   float: left;
+}
+
+ul.topNav li a {
+   transition:all 0.5s ease-in-out;
+   display: inline-block;
+   text-align: center;
+   text-decoration: none;
+}
+
+ul.topNav li.icon {
+   display: none;
+   /*
+   Hide the list item that contains the link that should open and close
+   the topnav on small screens
+   */
+}
+
+@media screen and (max-width: 680px) {
+   ul.topNav li:not(:first-child) {
+      display: none;
+   }
+   ul.topNav li.icon {
+      float: right;
+      display: inline-block;
+   }
+}
+
+/* JS */
+@media screen and (max-width: 680px) {
+   ul.topNav.responsive {
+      position: relative;
+   }
+   ul.topNav.responsive li.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+   }
+   ul.topNav.responsive li {
+      float: none;
+      display: inline;
+   }
+   ul.topNav.responsive li a {
+      display: block;
+      text-align: left;
+   }
+}
+
+li a:hover {
+   background-color: #212324;
+   margin: 15px 15px 15px 15px;
+   color:#fff;
+   font-family:arial;
+   padding:5px 5px 15px 5px;
+   border-radius: 50%;
+   font-family: 'Pacifico', cursive;
+}
+li a:active {
+   background-color: #212324;
+   margin: 15px 15px 15px 15px;
+   color:#fff;
+   font-family:arial;
+   padding:5px 5px 15px 5px;
+   border-radius: 50%;
+   font-family: 'Pacifico', cursive;
+}
+
+footer {
+   text-align: center;
+   border: 1px solid black;
+}
+
+/*Under construction button (currently only button rename soon)*/
+button a {
+   text-decoration: none;
+   color: white;
+}
+/*
+Need to make icons round without changing their values
+Need to find or create login/logout/sign up icons
+Need to learn how to create viewport size change
+Need to learn how to create a collapse for all icons so when they reach a
+certain size they collaspe into an icon
+Figure out how to move tabs aorund the screen and alter size without using padding/margin!!!
+
+*/

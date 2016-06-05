@@ -1,0 +1,47 @@
+* {
+padding:0px;
+margin:0px;
+text-align:center;
+}
+
+#top_nav {
+	width:90%;
+	margin:auto;
+}
+
+
+div{
+	float: left;
+	height:50px;
+	width:200px;
+	margin:3px;
+	border-radius:20px;
+	font-family: Tahoma;
+	line-height:50px;
+	color:white;
+	box-shadow: 10px 10px 5px grey;
+	text-shadow:3px 3px black;
+}
+
+#home {
+	background: -webkit-linear-gradient(green, yellow);
+	background: linear-gradient(green, yellow);
+}
+
+#products {
+	background: -webkit-linear-gradient(right, green, yellow);
+	background: linear-gradient(to right, green, yellow);
+}
+
+#service {
+	background: -webkit-linear-gradient(left, green, yellow);
+	background: linear-gradient(to left, green, yellow);
+}
+
+#contact {
+	background: -webkit-linear-gradient (green,yellow);
+}
+
+#about {
+	background: -webkit-linear-gradient (green,yellow);
+}
